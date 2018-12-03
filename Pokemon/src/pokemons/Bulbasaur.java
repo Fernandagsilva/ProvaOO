@@ -20,6 +20,8 @@ public class Bulbasaur extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
     
     public void setTipo(){
@@ -52,6 +54,18 @@ public class Bulbasaur extends Pokemons {
     
      public void setEspecial(){
         this.especial = 65;
+    }
+     public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 10;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Bullbasaur";
     }
    
 }

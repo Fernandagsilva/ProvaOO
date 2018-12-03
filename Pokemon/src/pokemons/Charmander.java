@@ -23,6 +23,8 @@ public class Charmander extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
     
     
@@ -53,5 +55,17 @@ public class Charmander extends Pokemons {
     
      public void setEspecial(){
         this.especial = 60;
+    }
+    public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 30;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Charmander";
     }
 }

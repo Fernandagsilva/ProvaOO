@@ -23,6 +23,8 @@ public class Magikarp extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
     
     @Override
@@ -51,6 +53,18 @@ public class Magikarp extends Pokemons {
     
      public void setEspecial(){
         this.especial = 20;
+    }
+     public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 90;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Magikarp";
     }
    
 }

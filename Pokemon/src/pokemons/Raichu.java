@@ -23,6 +23,8 @@ public class Raichu extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
     
     @Override
@@ -51,5 +53,17 @@ public class Raichu extends Pokemons {
     
      public void setEspecial(){
         this.especial = 90;
+    }
+    public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 140;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Raichu";
     }
 }

@@ -26,6 +26,8 @@ public class Charizard extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setSom();
+        this.setPreco();
     }
     
     public void setHabilidade(){
@@ -51,6 +53,18 @@ public class Charizard extends Pokemons {
     
      public void setEspecial(){
         this.especial = 109;
+    }
+     public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 20;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Charizard,";
     }
     
 }

@@ -14,6 +14,12 @@ import java.util.*;
 public class Jogo {
     private Jogador jogador[] = new Jogador[2];
     private Controlador controlador = new Controlador();
+    PokemonBrinquedo pokemonVenda = new PokemonBrinquedo();
+    
+    public void vendaPokemons() throws FileNotFoundException, NoSuchMethodException, ClassNotFoundException, InstantiationException, IllegalArgumentException, IllegalAccessException{
+        pokemonVenda.VendaPokemon();
+    }
+    
     
     public Jogo(Jogador jogador1,Jogador jogador2) throws FileNotFoundException{
         this.jogador[0]=jogador1;

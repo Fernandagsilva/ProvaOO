@@ -1,4 +1,5 @@
 package pokemon;
+import pokemons.*;
 
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -10,6 +11,8 @@ public abstract class Pokemons implements AcoesPokemon {
     protected int ataque;
     protected int defesa;
     protected int especial;
+    protected double preco;
+    protected String som;
     public double atacar(int habil,Jogador atacante,Jogador defensor) throws FileNotFoundException{
         Controlador controlador = new Controlador();
         Random ran = new Random();
@@ -106,5 +109,9 @@ public abstract class Pokemons implements AcoesPokemon {
     public void gastaEspecial(int gasto){
         this.especial = this.especial-gasto;
     }
-
+      public double getPreco(){
+        return preco;
+    }
+    
+    
 }

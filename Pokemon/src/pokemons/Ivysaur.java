@@ -23,6 +23,8 @@ public class Ivysaur extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
     
     @Override
@@ -51,6 +53,18 @@ public class Ivysaur extends Pokemons {
     
      public void setEspecial(){
         this.especial = 80;
+    }
+    public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 80;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Ivysaur";
     }
     
 }

@@ -23,6 +23,8 @@ public class Growlithe extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
        
     @Override
@@ -52,5 +54,16 @@ public class Growlithe extends Pokemons {
      public void setEspecial(){
         this.especial = 70;
     }
-    
+    public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 50;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Growlithe";
+    }
 }

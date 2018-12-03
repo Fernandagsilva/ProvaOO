@@ -23,6 +23,8 @@ public class Venusaur extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
     
     @Override
@@ -51,5 +53,17 @@ public class Venusaur extends Pokemons {
     
      public void setEspecial(){
         this.especial = 100;
+    }
+     public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 150;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Venusaur";
     }
 }

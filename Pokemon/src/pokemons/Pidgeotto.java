@@ -23,6 +23,8 @@ public class Pidgeotto extends Pokemons {
         this.setTipo();
         this.setVida();
         this.setHabilidade();
+        this.setPreco();
+        this.setSom();
     }
     
     @Override
@@ -51,5 +53,17 @@ public class Pidgeotto extends Pokemons {
     
      public void setEspecial(){
         this.especial = 50;
+    }
+    public double getPreco(){
+        return preco;
+    }
+    public void setPreco(){
+        this.preco = 110;
+    }
+    public String getSom(){
+        return som;
+    }
+    public void setSom(){
+        this.som = "Som Pidgeotto";
     }
 }
